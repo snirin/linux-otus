@@ -1,0 +1,13 @@
+fdisk -l, df -h, lsblk 
+dmesg | grep sda 
+sys/block 
+find /dev/disk 
+
+
+Vagrant
+vagrant box list
+vagrant box add --name centos-7-8 centos-7.8.2003-kernel-5-x86_64-Minimal.box
+vagrant init centos-7-8
+vagrant up
+vagrant cloud auth login
+vagrant cloud publish --release snirinn/centos-7-8 1.0 centos-7.8.2003-kernel-5-x86_64-Minimal.box
